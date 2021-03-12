@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="fontawesome/css/all.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="icon" href="CoverArt.jpg"/>
+    <script>
+        function show() {
+            const video = document.getElementById('video');
+            video.classList.add('show');
+        }
+        function remove()   {
+            const video = document.getElementById('video');
+            video.classList.remove('show');
+        }
+    </script>
+    <title>Sagnik-Forever</title>
+</head>
+<body>
+    <div class="container" id="container">
+        <div id="bg_container" style="display: block;">
+            <img id="bg_img" src="CoverArt.jpg">
+        </div>
+        <div id="content">
+            <div class="imageplayer">
+                <img id="cover_art" src="CoverArt.jpg" style="display: block; width:100%; max-width:400px;">
+                <button  id="playbtn" onclick="show()" style="width:96%; max-width:400px; height: 100%; max-height: 385px;">
+                    <i class="fab fa-youtube fa-4x" id="ytbtn"></i>
+                </button>
+            </div>
+            <h1 class="title">Forever</h1>
+            <div class="platform-list_container">
+                <div class="platform-list">
+                    <div class="music-link">
+                        <img class="music-link-logo" src="youtube.svg"></img>
+                        <button class="music-link_button" onclick="window.location.href='https://youtu.be/8--GOhIrctc';">Watch Video</button>
+                    </div>
+                    <div class="music-link">
+                        <img class="music-link-logo" src="spotify.svg"></img>
+                        <button class="music-link_button" onclick="window.location.href='https://www.spotify.com';">Listen</button>
+                    </div>
+                    <div class="music-link">
+                        <img class="music-link-logo" src="JioSaavn.png"></img>
+                        <button class="music-link_button" onclick="window.location.href='https://www.youtube.com';">Listen</button>
+                    </div>
+                    <div class="music-link">
+                        <img class="music-link-logo" src="youtube_music.svg"></img>
+                        <button class="music-link_button" onclick="window.location.href='https://www.youtube.com';">Listen</button>
+                    </div>
+                    <div class="music-link">
+                        <img class="music-link-logo" src="apple-music.svg"></img>
+                        <button class="music-link_button" onclick="window.location.href='https://www.youtube.com';">Listen</button>
+                    </div>
+                    <div class="music-link">
+                        <img class="music-link-logo" src="amazon-music.svg"></img>
+                        <button class="music-link_button" onclick="window.location.href='https://www.youtube.com';">Listen</button>
+                    </div>
+                    <div class="music-link">
+                        <img class="music-link-logo" src="resso.svg"></img>
+                        <button class="music-link_button" onclick="window.location.href='https://www.youtube.com';">Listen</button>
+                    </div>
+                    <div class="music-link">
+                        <img class="music-link-logo" src="itunes.svg"></img>
+                        <button class="music-link_button" onclick="window.location.href='https://music.apple.com/in/album/forever-single/1552156956';">Download</button>
+                    </div>
+                </div>
+            </div>
+            <div class="social-buttons-container">
+                <ul>
+                    <li>
+                        <a href="http://www.facebook.com/imsagnik04" target="_blank">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        
+                    </li>
+                    <li>
+                        <a href="http://www.instagram.com/imsagnik04" target="_blank">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://open.spotify.com/artist/3yevOqY6OUzGEMtilhF30k?si=qOd-EiQcQ1GRqjJgPUOTqQ&utm_source=native-share-menu" target="_blank">
+                            <i class="fab fa-spotify"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.twitter.com/imsagnik04" target="_blank">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.youtube.com/channel/UCRILxOSvrevspFC2wmns9Lg" target="_blank">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    
+    <div class="video" id="video">
+        <div class="bgcolor" onclick="remove()"></div>
+        <div class="iframe-container">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/8--GOhIrctc" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+    </div>
+</body>
+</html>
